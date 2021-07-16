@@ -527,7 +527,7 @@ socket.on("prices", async (p) => {
 					from: process.env.PUBLIC_KEY,
 				    to : process.env.TRADING_ADDRESS,
 				    data : tradingContract.methods.executeNftOrder(orderType, t.trader, t.pairIndex, t.userTradesIndex, nft.id, nft.type).encodeABI(),
-				    gasPrice: web3[selectedProvider].utils.toHex("20000000000"),
+				    gasPrice: web3[selectedProvider].utils.toHex("23005000000"),
 				    gas: web3[selectedProvider].utils.toHex("2000000")
 				};
 
